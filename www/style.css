@@ -77,3 +77,8 @@ input:focus,select:focus{outline:2px solid var(--saffron);border-color:var(--saf
 .sect{margin:1.4rem 0 .6rem}
 .toast{position:fixed;bottom:1.2rem;left:50%;transform:translateX(-50%);background:var(--maroon);color:#fff;padding:.7rem 1.2rem;border-radius:99px;z-index:20;font-size:.9rem}
 footer{text-align:center;color:var(--muted);font-size:.78rem;padding:1rem 16px 2rem}
+/* mobile app polish */
+body{-webkit-tap-highlight-color:transparent;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}
+button,.chip,.tile{touch-action:manipulation}
+input,select{font-size:16px}
+.chip{padding:.6rem 1rem}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Damodara Ratna Mandir</string>
+    <string name="title_activity_main">Damodara Ratna Mandir</string>
+    <string name="package_name">com.damodara.ratnamandir</string>
+    <string name="custom_url_scheme">com.damodara.ratnamandir</string>
+</resources>
