@@ -1,6 +1,6 @@
 /* Damodara Ratna Mandir — premium gold / deep red / cream */
 :root{
-  --red:#1c3f94; --red-d:#10265f; --gold:#b8892b; --gold-l:#e2c277; --gold-d:#8f6718;
+  --red:#7a1420; --red-d:#5a0d17; --gold:#b8892b; --gold-l:#e2c277; --gold-d:#8f6718;
   --cream:#fbf4e4; --paper:#fffaf0; --ink:#3a1f1a; --muted:#8c7461; --line:#e6d3a6;
   --ok:#2f7d4f; --bad:#a3201c;
   --serif:"Cormorant Garamond","Playfair Display",Georgia,"Times New Roman",serif;
@@ -10,9 +10,9 @@
 }
 *{box-sizing:border-box}
 html,body{margin:0}
-html{background:#0a1233}
+html{background:#2a0a10}
 body{font-family:var(--sans);color:var(--ink);min-height:100vh;line-height:1.55;display:flex;justify-content:center;
-  background:#0a1233;-webkit-tap-highlight-color:transparent;padding-top:env(safe-area-inset-top)}
+  background:#2a0a10;-webkit-tap-highlight-color:transparent;padding-top:env(safe-area-inset-top)}
 h1,h2,h3,h4{font-family:var(--serif);color:var(--red);margin:0 0 .4rem;font-weight:700;letter-spacing:.2px}
 button{font-family:inherit}
 [hidden]{display:none!important}
@@ -57,7 +57,7 @@ input,select{width:100%;margin-top:.3rem;padding:.8rem .9rem;border:1px solid va
 input:focus,select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px #b8892b33}
 .err{color:var(--bad);font-size:.8rem;min-height:1.1em;margin:.3rem 0 0;text-align:left}
 .btn{width:100%;border:0;border-radius:14px;padding:.95rem 1.2rem;margin-top:.7rem;font:600 .95rem var(--sans);letter-spacing:.4px;cursor:pointer}
-.btn.primary{background:linear-gradient(180deg,#2650b8,var(--red-d));color:var(--gold-l);border:1px solid var(--gold);box-shadow:0 6px 16px #1c3f9433}
+.btn.primary{background:linear-gradient(180deg,#8d1a28,var(--red-d));color:var(--gold-l);border:1px solid var(--gold);box-shadow:0 6px 16px #7a142033}
 .btn:active{transform:scale(.99)}
 #view-login .fine{margin-top:1.2rem}
 
@@ -68,7 +68,7 @@ input:focus,select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 
 .hello p{margin:0;color:var(--muted);font-size:.9rem}
 .grid2{display:grid;gap:1rem}
 .tile{display:flex;align-items:center;gap:1rem;text-align:left;width:100%;cursor:pointer;padding:1.2rem;border-radius:20px;
-  background:var(--paper);border:1px solid var(--line);color:var(--ink);box-shadow:0 8px 22px #1c3f940f;position:relative}
+  background:var(--paper);border:1px solid var(--line);color:var(--ink);box-shadow:0 8px 22px #7a14200f;position:relative}
 .tile::after{content:"›";position:absolute;right:1.1rem;top:50%;transform:translateY(-50%);color:var(--gold);font-size:1.6rem}
 .tile:active{transform:scale(.99)}
 .tile-ico{flex:none;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;font-size:1.9rem;
@@ -79,7 +79,7 @@ input:focus,select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 
 /* ---------- inner pages ---------- */
 .back{background:none;border:0;color:var(--gold-d);font-weight:500;font-size:.85rem;cursor:pointer;padding:0;margin-bottom:.5rem}
 .view h2{font-size:1.9rem}
-.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:1.2rem;box-shadow:0 8px 22px #1c3f940f}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:1.2rem;box-shadow:0 8px 22px #7a14200f}
 .form{margin:.6rem 0 1.4rem}
 .form h3{font-size:1.15rem;margin-top:.4rem}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
@@ -95,7 +95,7 @@ input:focus,select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 
 .pill{background:var(--paper);border:1px solid var(--line);border-radius:99px;padding:.15rem .65rem;font-size:.74rem}
 .sect{margin:1.2rem 0 .6rem;font-size:1.4rem}
 .results{display:grid;grid-template-columns:1fr;gap:.9rem}
-.prod{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;box-shadow:0 6px 18px #1c3f940d}
+.prod{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;box-shadow:0 6px 18px #7a14200d}
 .prod.best{border:1.5px solid var(--gold)}
 .badge{position:absolute;top:.55rem;right:.7rem;background:var(--gold);color:#fff;font-size:.66rem;font-weight:600;border-radius:99px;padding:.12rem .6rem;letter-spacing:.3px}
 .thumb{flex:none;width:92px;display:grid;place-items:center;font-size:2.6rem;border-right:1px solid var(--line)}
