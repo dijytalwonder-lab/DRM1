@@ -6,6 +6,8 @@
 <title>Damodara Ratna Mandir</title>
 <meta name="theme-color" content="#6b1d1d">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪷</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,9 +22,10 @@
   <!-- LOGIN -->
   <section id="view-login" class="view">
     <div class="card login-card">
-      <div class="lotus">🪷</div>
-      <h1>Damodara<br><span>Ratna Mandir</span></h1>
-      <p class="tag">Sacred gems · Divine bracelets · Vastu harmony</p>
+      <div class="emblem">🪷</div>
+      <h1>Damodara<span>Ratna Mandir</span></h1>
+      <div class="orn">✦</div>
+      <p class="tag" style="margin-bottom:1rem">Sacred bracelets &amp; Vastu remedies</p>
       <form id="loginForm" autocomplete="on">
         <div class="seg">
           <button type="button" id="tabLogin" class="active">Login</button>
@@ -40,18 +43,17 @@
 
   <!-- HOME -->
   <section id="view-home" class="view" hidden>
-    <h2 class="center">Namaste, <span id="homeName"></span> 🙏</h2>
-    <p class="center sub">What would you like to explore today?</p>
+    <div class="hello"><small>Namaste</small><h2 id="homeName"></h2><p>What would you like to explore today?</p></div>
     <div class="grid2">
       <button class="tile" data-go="bracelet">
         <span class="tile-ico">📿</span>
-        <strong>Know Your Bracelet</strong>
-        <small>Enter your date &amp; time of birth to discover the bracelets your chart favours.</small>
+        <span><strong>Know Your Bracelet</strong>
+        <small>Share your birth details to find your 5 bracelets.</small></span>
       </button>
       <button class="tile" data-go="vastu">
         <span class="tile-ico">🏠</span>
-        <strong>Vastu Fix</strong>
-        <small>Pick a problem to solve or an energy to enhance and get remedies for your space.</small>
+        <span><strong>Vastu Fix</strong>
+        <small>Choose what to fix or enhance and get remedies.</small></span>
       </button>
     </div>
   </section>

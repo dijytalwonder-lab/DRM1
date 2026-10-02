@@ -59,7 +59,7 @@
   });
 
   function enter(name) {
-    $("hello").textContent = "🙏 " + name;
+    $("hello").textContent = name;
     $("homeName").textContent = name;
     $("loginForm").reset();
     show("home");
@@ -116,7 +116,7 @@
     const r = analyse(dobEl.value, $("tob").value);
     const card = (p, i) => `
       <article class="prod ${i < 2 ? "best" : ""}">
-        ${i < 2 ? '<span class="badge">★ Best match</span>' : '<span class="badge" style="background:#eee">Supportive</span>'}
+        ${i < 2 ? '<span class="badge">★ Best match</span>' : '<span class="badge soft">Supportive</span>'}
         <div class="thumb" style="background:linear-gradient(135deg,${p.color}33,${p.color}88)">${p.emoji}</div>
         <div class="pbody">
           <h4>${p.name}</h4>
