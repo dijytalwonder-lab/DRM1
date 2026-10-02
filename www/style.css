@@ -119,3 +119,20 @@ input:focus,select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 
 .logo{display:block;width:78%;max-width:300px;margin:0 auto 1rem;border-radius:26px;box-shadow:0 10px 28px #01092055,0 0 0 2px var(--gold)}
 .brand-mini{display:flex;align-items:center;gap:.5rem}.mini-logo{width:30px;height:30px;border-radius:50%;border:1px solid var(--gold)}
 .logo{width:104px;height:104px;max-width:none;border-radius:50%;margin-bottom:.8rem;box-shadow:0 6px 16px #01092055,0 0 0 2px var(--gold),0 0 0 6px var(--cream),0 0 0 7px var(--gold-l)}
+
+/* wishlist / payment / orders */
+.acts{display:flex;gap:.4rem;margin-top:.3rem;flex-wrap:wrap}
+.btn-sm.solid{background:var(--red);color:var(--gold-l);border-color:var(--red)}
+.btn-sm.saved{background:#f6e8c4;border-color:var(--gold-d);color:var(--gold-d)}
+.empty{text-align:center;color:var(--muted);padding:2.5rem 1rem;font-size:2rem;line-height:1.5}
+.empty small{font-size:.82rem}
+.sum .line,.order .line{display:flex;justify-content:space-between;gap:.6rem;font-size:.85rem;padding:.3rem 0;border-bottom:1px dashed var(--line)}
+.line.tot{border-bottom:0;font-weight:600;color:var(--red)}
+.order small{color:var(--muted);display:block;margin:.2rem 0 .4rem}
+.orders{display:grid;gap:.9rem}
+.ohead{display:flex;justify-content:space-between;align-items:center}
+.stat{background:#e3f1e8;color:var(--ok);border-radius:99px;font-size:.68rem;padding:.1rem .6rem;font-weight:600}
+label.radio{display:flex;align-items:center;gap:.6rem;padding:.7rem .8rem;border:1px solid var(--line);border-radius:12px;background:#fff;margin:.4rem 0}
+label.radio input{width:auto;margin:0;accent-color:var(--red)}
+.tabbar button{font-size:.62rem;padding:.3rem .1rem}
+.tabbar button i{font-size:1.2rem}

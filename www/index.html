@@ -88,12 +88,47 @@
     </form>
     <div id="vastuResult"></div>
   </section>
+  <!-- WISHLIST -->
+  <section id="view-wishlist" class="view" hidden>
+    <h2>Wishlist</h2>
+    <div class="results" id="wishList"></div>
+    <button class="btn primary" id="checkoutAll" hidden></button>
+  </section>
+
+  <!-- PAYMENT -->
+  <section id="view-pay" class="view" hidden>
+    <button class="back" data-go="wishlist">← Back</button>
+    <h2>Payment</h2>
+    <form id="payForm" class="card form">
+      <h3>Order summary</h3>
+      <div id="paySummary" class="sum"></div>
+      <h3 style="margin-top:1rem">Delivery details</h3>
+      <label>Full name<input id="shipName" required autocomplete="name"></label>
+      <label>Address<input id="shipAddr" required autocomplete="street-address" placeholder="House, street, city, PIN"></label>
+      <h3 style="margin-top:1rem">Payment method</h3>
+      <label class="radio"><input type="radio" name="pm" value="upi" checked> UPI</label>
+      <label id="upiRow">UPI ID<input id="upiId" placeholder="name@upi" autocomplete="off"></label>
+      <label class="radio"><input type="radio" name="pm" value="card"> Card / Netbanking</label>
+      <label class="radio"><input type="radio" name="pm" value="cod"> Cash on delivery</label>
+      <p class="err" id="payErr" role="alert"></p>
+      <button class="btn primary" type="submit">Pay <span id="payAmt"></span></button>
+      <p class="fine">Demo checkout: no real payment is taken and no card or bank details are collected or stored.</p>
+    </form>
+  </section>
+
+  <!-- ORDERS -->
+  <section id="view-orders" class="view" hidden>
+    <h2>Purchase history</h2>
+    <div id="orderList" class="orders"></div>
+  </section>
 </main>
 
 <nav class="tabbar" id="tabbar" hidden>
   <button data-go="home" data-tab="home"><i>🏠</i>Home</button>
   <button data-go="bracelet" data-tab="bracelet"><i>📿</i>Bracelet</button>
   <button data-go="vastu" data-tab="vastu"><i>🧭</i>Vastu</button>
+  <button data-go="wishlist" data-tab="wishlist"><i>♡</i>Wishlist</button>
+  <button data-go="orders" data-tab="orders"><i>🛍️</i>Orders</button>
 </nav>
 <footer>🪷 Damodara Ratna Mandir · Guidance is traditional &amp; for inspiration, not a substitute for medical, legal or financial advice.</footer>
 </div>
