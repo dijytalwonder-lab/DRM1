@@ -12,6 +12,8 @@
   function show(name) {
     views.forEach((v) => ($("view-" + v).hidden = v !== name));
     $("topbar").hidden = name === "login";
+    $("tabbar").hidden = name === "login";
+    document.querySelectorAll("#tabbar button").forEach((b) => b.classList.toggle("active", b.dataset.tab === name));
     window.scrollTo(0, 0);
   }
   document.addEventListener("click", (e) => {

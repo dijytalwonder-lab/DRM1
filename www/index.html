@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="bg-glow"></div>
+<div class="app">
 
 <header class="topbar" id="topbar" hidden>
   <button class="brand-mini" id="homeBtn" aria-label="Home">🪷 <span>Damodara Ratna Mandir</span></button>
@@ -88,7 +88,13 @@
   </section>
 </main>
 
+<nav class="tabbar" id="tabbar" hidden>
+  <button data-go="home" data-tab="home"><i>🏠</i>Home</button>
+  <button data-go="bracelet" data-tab="bracelet"><i>📿</i>Bracelet</button>
+  <button data-go="vastu" data-tab="vastu"><i>🧭</i>Vastu</button>
+</nav>
 <footer>🪷 Damodara Ratna Mandir · Guidance is traditional &amp; for inspiration, not a substitute for medical, legal or financial advice.</footer>
+</div>
 
 <script src="data.js"></script>
 <script src="app.js"></script>

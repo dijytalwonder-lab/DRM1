@@ -82,3 +82,24 @@ body{-webkit-tap-highlight-color:transparent;padding-top:env(safe-area-inset-top
 button,.chip,.tile{touch-action:manipulation}
 input,select{font-size:16px}
 .chip{padding:.6rem 1rem}
+
+/* ---- app shell: always phone-sized, bottom tab bar ---- */
+html{background:#2a0c0c}
+body{background:#2a0c0c;display:flex;justify-content:center}
+.app{position:relative;width:100%;max-width:430px;min-height:100vh;background:var(--cream);display:flex;flex-direction:column;
+  background-image:radial-gradient(500px 300px at 50% -5%,#f6cf8a66,transparent)}
+@media(min-width:500px){.app{margin:16px 0;min-height:calc(100vh - 32px);border-radius:28px;overflow:hidden;box-shadow:0 20px 60px #0008}}
+.app main{flex:1;width:100%;padding-bottom:84px}
+.topbar{position:sticky;top:0}
+.grid2{grid-template-columns:1fr}
+.tile{padding:1.3rem}
+.tile-ico{font-size:2.2rem}
+footer{display:none}
+.tabbar{position:sticky;bottom:0;display:flex;background:#fff;border-top:1px solid var(--line);padding:.35rem .5rem calc(.35rem + env(safe-area-inset-bottom));z-index:6;margin-top:auto}
+.tabbar button{flex:1;border:0;background:none;display:flex;flex-direction:column;align-items:center;gap:2px;font:600 .72rem inherit;color:var(--muted);padding:.3rem;cursor:pointer}
+.tabbar button i{font-style:normal;font-size:1.4rem}
+.tabbar button.active{color:var(--maroon)}
+.tabbar button.active i{transform:translateY(-2px)}
+.results{grid-template-columns:1fr}
+.login-card{margin-top:2vh}
+.toast{bottom:5.5rem}
