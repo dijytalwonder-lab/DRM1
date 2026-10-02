@@ -118,3 +118,4 @@ input:focus,select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 
 .badge{left:auto}.badge.soft{background:#f1e4c0;color:var(--gold-d)}
 .logo{display:block;width:78%;max-width:300px;margin:0 auto 1rem;border-radius:26px;box-shadow:0 10px 28px #01092055,0 0 0 2px var(--gold)}
 .brand-mini{display:flex;align-items:center;gap:.5rem}.mini-logo{width:30px;height:30px;border-radius:50%;border:1px solid var(--gold)}
+.logo{width:104px;height:104px;max-width:none;border-radius:50%;margin-bottom:.8rem;box-shadow:0 6px 16px #01092055,0 0 0 2px var(--gold),0 0 0 6px var(--cream),0 0 0 7px var(--gold-l)}
